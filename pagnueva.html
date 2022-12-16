@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+    <title>market</title>
+    <style>
+        .parrafos{
+     display: flex;
+
+        }
+
+    </style>
+</head>
+
+   
+
+   <div class = "parrafos">TEXTO MARKDOWN:   <textarea  style="background-color: aqua;" name="text" id="text" cols="40" rows="20" style="color: brown;">Escribir</textarea></div>
+   <h3>   </h3>
+   <div class = "parrafos">TEXTO HTML TRANS: <textarea style="background-color: aqua;" name="content" id="content" cols="40" rows="20" style="color: green;" >recibido</textarea></div>
+   </body>
+   <a style="color:black;" href="lista.html" class="btn" >Enviar</a>
+
+   <a style="color:black;" href="index.html" class="btn" >Cancelar</a>
+  
+   <div id="resultado">
+
+   </div>
+   <script>
+      window.onload = function(){
+         var datos=[];
+      }
+      function agregarElemento(){
+         let dato =document.getElementById('texto').value;
+         datos.push(dato);
+         
+      }
+      function mostrarArreglo(){
+         let resultado = document.getElementById('resultado');
+         resultado.innerHTML='';
+         
+         for(const daro of datos){
+
+            let datoParrafo=document.cre
+         }
+      }
+
+   $(document).ready(function(){
+        $("#text").keyup(function(){
+          document.getElementById("content").value = marked.parse(document.getElementById("text").value)
+       
+     
+     })
+
+   })
+
+
+   </script>
+
+    </form>
+    </div>
+      
+    
